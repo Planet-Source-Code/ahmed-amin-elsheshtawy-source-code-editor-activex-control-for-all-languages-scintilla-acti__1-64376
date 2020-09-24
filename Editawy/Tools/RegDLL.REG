@@ -1,0 +1,11 @@
+REGEDIT4
+[HKEY_CLASSES_ROOT\dllfile\shell]
+[HKEY_CLASSES_ROOT\dllfile\shell\Register]
+@="&Register ActiveX DLL"
+[HKEY_CLASSES_ROOT\dllfile\shell\Register\command]
+@="\"REGSVR32.EXE\" \"%1\""
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Unregister]
+@="&Unregister ActiveX DLL"
+[HKEY_CLASSES_ROOT\dllfile\shell\Unregister\command]
+@="\"REGSVR32.EXE\" \"%1\" \"/U\" "
